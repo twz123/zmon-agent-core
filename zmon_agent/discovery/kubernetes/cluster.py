@@ -170,9 +170,7 @@ class Discovery:
             self.kube_client, self.cluster_id, self.alias, self.environment, self.region, self.infrastructure_account,
             namespace=self.namespace)
 
-        cronjob_entities = get_cluster_cronjobs(
-            self.kube_client, self.cluster_id, self.alias, self.environment, self.region, self.infrastructure_account,
-            namespace=self.namespace)
+        cronjob_entities = []
 
         postgresql_entities = []
         postgresql_cluster_entities = []
